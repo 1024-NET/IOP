@@ -36,27 +36,25 @@ X的软件架构
 　　上文所说的GDM就是GNOME的一部分，一旦GDM通过了身份认证请求，它就会启动GNOME为用户提供图形化界面了，当然我们也可以从文本模式中通过startx命令来启动GNOME。
   
  ### 3. GNOME与X的区别与联系
- 
-　　关于GNOME与X之间的关系，这里有一篇文章介绍的非常清楚，现摘抄一部分如下，我就不画蛇添足了:
+  
+    关于GNOME与X之间的关系:
 
-    X11 is the window system. Gnome is a desktop environment. The difference is that Gnome works through X11. Gnome and X11 run on Linux, though, not Windows. 
+    X11是窗口系统。Gnome是一个桌面环境。区别在于Gnome是通过X11工作的。不过，Gnome和X11运行在Linux上，而不是Windows上。
 
-    Basically, X11 is what displays everything. It's the graphical shell that connects you to the operating system. None of the applications you run ever send anything directly to the screen - they need to tell X11 what they want to display and let it do the work for them. 
+    基本上，X11可以显示所有内容。它是将您连接到操作系统的图形化外壳。您运行的任何应用程序都不会将任何东西直接发送到屏幕——它们需要告诉X11它们想要显示什么，并让X11为它们工作。
 
-    X11 draws and moves windows and responds to input from the keyboard and mouse. That's pretty much it. Everything else is taken care of by the desktop environment. What that means is that the look and feel of the windows and the way those windows behave are all decided by which desktop environment you're using (Gnome, KDE, XFCE, etc.). 
+    X11绘制和移动窗口并响应键盘和鼠标的输入。这是相当多的。其他一切都由桌面环境处理。这意味着windows的外观和操作方式都取决于您使用的桌面环境(Gnome、KDE、XFCE等)。
 
-    The desktop environments all have their own graphics libraries (reusable chunks of code) that they use, along with APIs (Application Programming Interfaces) which allow programmers to use those libraries when they create GUI applications. This way programmers don't have to recreate commonly used functions and elements from scratch, and the whole operating system has a more standardized look. 
+    桌面环境都有自己的图形库(可重用的代码块)，以及api(应用程序编程接口)，允许程序员在创建GUI应用程序时使用这些库。这样程序员就不必从头重新创建常用的函数和元素，而且整个操作系统的外观也更加标准化。
 
 
-参考链接：http://en.wikipedia.org/wiki/X_Window_System
+参考链接：
 
-　　　　　http://en.wikipedia.org/wiki/X_display_manager_(program_type)
-
-　　　　　https://wiki.archlinux.org/index.php/Display_Manager
-
- 　　　　 https://wiki.debian.org/DisplayManager
-
-　　　　　http://en.wikipedia.org/wiki/GNOME
-
-　　　　　http://stackoverflow.com/questions/17251293/what-is-the-relationship-between-x11-and-gnome 
+- [Beanmoon](https://www.cnblogs.com/beanmoon/p/3404911.html)
+- [Link1](http://en.wikipedia.org/wiki/X_Window_System)
+- [Link2](http://en.wikipedia.org/wiki/X_display_manager_(program_type))
+- [Link3](https://wiki.archlinux.org/index.php/Display_Manager)
+- [Link4](https://wiki.debian.org/DisplayManager)
+- [Link5](http://en.wikipedia.org/wiki/GNOME)
+- [Link6]http://stackoverflow.com/questions/17251293/what-is-the-relationship-between-x11-and-gnome 
 
