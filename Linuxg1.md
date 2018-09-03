@@ -51,10 +51,11 @@ X的软件架构
 参考链接：
 
 - [Beanmoon](https://www.cnblogs.com/beanmoon/p/3404911.html)
-- [Link1](http://en.wikipedia.org/wiki/X_Window_System)
-- [Link2](http://en.wikipedia.org/wiki/X_display_manager_(program_type))
-- [Link3](https://wiki.archlinux.org/index.php/Display_Manager)
-- [Link4](https://wiki.debian.org/DisplayManager)
-- [Link5](http://en.wikipedia.org/wiki/GNOME)
-- [Link6](http://stackoverflow.com/questions/17251293/what-is-the-relationship-between-x11-and-gnome) 
+- [X_Window_System](http://en.wikipedia.org/wiki/X_Window_System)
+- [X_display_manager_(program_type)](http://en.wikipedia.org/wiki/X_display_manager_(program_type))
+- [Display_Manager](https://wiki.archlinux.org/index.php/Display_Manager)
+- [DisplayManager](https://wiki.debian.org/DisplayManager)
+- [GNOME](http://en.wikipedia.org/wiki/GNOME)
+- [what-is-the-relationship-between-x11-and-gnome](http://stackoverflow.com/questions/17251293/what-is-the-relationship-between-x11-and-gnome) 
+- [linux桌面环境gnome,kde,xfce,lxde 使用比较](https://www.jb51.net/LINUXjishu/512251.html)
 
