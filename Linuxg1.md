@@ -1,4 +1,4 @@
-   我们知道unix/linux刚开始的时候是没有图形界面的，随着时代的发展，排版、制图、多媒体应用越来越普遍了，这些需求都需要用到图形界面（Graphical User Interface）。为此，MIT在1984年开发出了X window system，X在字母表中是W（indows）的下一个字母，寓意“下一代GUI”的意思。目前为止，unix/linux上几乎所有的发行版都采用X window system来作为自己的图形界面，它已经成为事实上的unix/linux图形界面标准。
+　　我们知道unix/linux刚开始的时候是没有图形界面的，随着时代的发展，排版、制图、多媒体应用越来越普遍了，这些需求都需要用到图形界面（Graphical User Interface）。为此，MIT在1984年开发出了X window system，X在字母表中是W（indows）的下一个字母，寓意“下一代GUI”的意思。目前为止，unix/linux上几乎所有的发行版都采用X window system来作为自己的图形界面，它已经成为事实上的unix/linux图形界面标准。
 
 　　X window system，又名X,X11（现在主要的X window system大都基于其第11个版本），是一个能够跨网络和操作系统平台的图形界面。开发者在开发x时就希望，这个窗口界面不要与硬件有强烈的相关性，这是因为如果与硬件的相关性高，那就等于开发一个操作系统了，如此一来其应用性就要受到限制。故此，x是一套软件体系，而不是操作系统中的组成部分，就像浏览器不是操作系统的组成部分一样（当然微软在与网景干仗时可不管这些）。
 
@@ -16,13 +16,13 @@ X的软件架构
 ### 1. X Display Manager(XDM)
 
 　　display manager，又称login manager，是linux在boot进程完成之后启动的一个用于用户身份认证的图形界面，相当于文本模式下启动时让我们输入用户名和密码的shell。比较常见的有GNOME的gdm，KDE的kdm等。
-![](https://i.imgur.com/Ka9OAvi.png)
+![](https://i.imgur.com/F3slo4W.jpg)
 　　
 
 　　display manager可以在本地也可以在远程主机上启动。如果在本地启动，display manager接下来会把x server也启动起来，这样就可以在开机时显示如上图所示的图形界面了。
 
 　　如果display manager已经在远程启动了，我们在本地需要连接到远程的display manager上去，这时x server就用使用XDMCP(X Display Manager Control Protocol)协议连接到远程的display manager，请求开启一个会话，这样在本地也就出现了如上图所示画面，如果身份认证通过，display manager就退居二线，剩下的就是本地的x server与远程的x client之间互相交流了：我们通过x server（键盘、鼠标等输入设备）把我们的要求发给x client（x client与display manager 运行在同一台机器上），x client运行得到结果并将结果返回给x server，x server再通过自己管理的输出设备如显示屏等把结果显示出来，如此种种可以参看下图。
-![](https://i.imgur.com/Ka9OAvi.png)
+![](https://i.imgur.com/PZuSO7T.png)
 
 　　我们可以发现，在第二种情况下，x server就相当于图形化界面的telnet客户端，而display manager 相当于图形化界面的telnet服务端，不是么？：-）
 
@@ -48,9 +48,7 @@ X的软件架构
     The desktop environments all have their own graphics libraries (reusable chunks of code) that they use, along with APIs (Application Programming Interfaces) which allow programmers to use those libraries when they create GUI applications. This way programmers don't have to recreate commonly used functions and elements from scratch, and the whole operating system has a more standardized look. 
 
 
-参考链接：
-
-         http://en.wikipedia.org/wiki/X_Window_System
+参考链接：http://en.wikipedia.org/wiki/X_Window_System
 
 　　　　　http://en.wikipedia.org/wiki/X_display_manager_(program_type)
 
