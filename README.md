@@ -17,11 +17,11 @@
 
 ## Linux G
 
-- [Linux下图形界面的研究]()
+- [Linux下图形界面的研究](https://github.com/dncProject/IOP/blob/master/Linuxg1.md)
 
-- [Linux下有哪些图形库？]()
+- [Linux下有哪些图形库？](https://github.com/dncProject/IOP/blob/master/Linuxg2.md)
 
-- [OpenGL]()
+- [OpenGL](https://github.com/dncProject/IOP/blob/master/Linuxg3.md)
 
 ## Windows G
 
