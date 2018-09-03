@@ -63,7 +63,7 @@ LibGGI试图建立一个一般性的图形接口，而这个抽象接口连同�
 
 三、面向嵌入式Linux系统的图形用户界面 
 3.1 MicoroWindows/NanoX
-　　MicroWindows（http://microwindows.censoft.com/）是一个开放源码的项目，目前由美国Century Software公司主持开发。该项目的开发一度非常活跃，国内也有人参与了其中的开发，并编写了GB2312等字符集的支持。但在 Qt/Embedded发布以来，该项目变得不太活跃，并长时间停留在0.89Pre7版本。可以说，以开放源码形势发展的MicroWindows项目，已基本停滞。 
+　　[MicroWindows](http://microwindows.censoft.com/) 是一个开放源码的项目，目前由美国Century Software公司主持开发。该项目的开发一度非常活跃，国内也有人参与了其中的开发，并编写了GB2312等字符集的支持。但在 Qt/Embedded发布以来，该项目变得不太活跃，并长时间停留在0.89Pre7版本。可以说，以开放源码形势发展的MicroWindows项目，已基本停滞。 
 　　MicroWindows是一个典型的基于客户/服务器体系结构的GUI系统，基本分为三层。最底层是面向图形输出和键盘、鼠标或触摸屏的驱动程序；中间层提供底层硬件的抽象接口，并进行窗口管理；最高层分别提供兼容于X Window和 Windows CE（Win32 子集）的API。 
 　　该项目的主要特色在于提供了类似X的客户/服务器体系结构，并提供了相对完善的图形功能，包括一些高级的功能，比如Alpha混合，三维支持，TrueType 字体支持等。但需要注意的是，MicroWindows的图形引擎存在许多问题，可以归纳如下： 
 1）无任何硬件加速能力。 
@@ -72,11 +72,11 @@ LibGGI试图建立一个一般性的图形接口，而这个抽象接口连同�
 　　MicroWindows 采用MPL条款发布（该条款基本类似 LGPL 条款）。 
 
 3.2 OpenGUI
-　　OpenGUI（http://www.tutok.sk/fastgl/）在Linux系统上存在已经很长时间了。最初的名字叫FastGL，只支持256色的线性显存模式，但目前也支持其他显示模式，并且支持多种操作系统平台，比如 MS-DOS、QNX 和Linux等等，不过目前只支持x86硬件平台。OpenGUI也分为三层。最低层是由汇编编写的快速图形引擎；中间层提供了图形绘制API，包括线条、矩形、圆弧等，并且兼容于 Borland的BGI API。第三层用C++编写，提供了完整的GUI对象集。 
+　　[OpenGUI](http://www.tutok.sk/fastgl/) 在Linux系统上存在已经很长时间了。最初的名字叫FastGL，只支持256色的线性显存模式，但目前也支持其他显示模式，并且支持多种操作系统平台，比如 MS-DOS、QNX 和Linux等等，不过目前只支持x86硬件平台。OpenGUI也分为三层。最低层是由汇编编写的快速图形引擎；中间层提供了图形绘制API，包括线条、矩形、圆弧等，并且兼容于 Borland的BGI API。第三层用C++编写，提供了完整的GUI对象集。 
 　　OpenGUI采用LGPL条款发布。OpenGUI比较适合于基于x86平台的实时系统，可移植性稍差，目前的发展也基本停滞。 
 
 3.3 Qt/Embedded
-　　Qt/Embedded是著名的Qt库开发商TrollTech（http://www.trolltech.com/）发布的面向嵌入式系统的Qt版本。因为Qt是KDE等项目使用的GUI支持库，所以有许多基于Qt 的X Window程序可以非常方便地移植到Qt/Embedded版本上。因此，自从Qt/Embedded以GPL条款形势发布以来，就有大量的嵌入式Linux开发商转到了Qt/Embedded系统上。比如韩国的Miz 公司，台湾省的某些嵌入式Linux应用开发商等等。 
+　　Qt/Embedded是著名的Qt库开发商[TrollTech](http://www.trolltech.com/) 发布的面向嵌入式系统的Qt版本。因为Qt是KDE等项目使用的GUI支持库，所以有许多基于Qt 的X Window程序可以非常方便地移植到Qt/Embedded版本上。因此，自从Qt/Embedded以GPL条款形势发布以来，就有大量的嵌入式Linux开发商转到了Qt/Embedded系统上。比如韩国的Miz 公司，台湾省的某些嵌入式Linux应用开发商等等。 
 　　不过，在笔者看来，Qt/Embedded还有一些问题值得开发者注意： 
 1）目前，该系统采用两种条款发布，其中包括GPL条款。对函数库使用GPL条款，意味着其上的应用需要遵循GPL条款。当然了，如果要开发商业程序，TrollTech也允许你采用另外一个授权条款，这时，就必须向TrollTech交纳授权费用了。 
 2）Qt/Embedded是一个C++函数库，尽管Qt/Embedded声称可以裁剪到最少 630K，但这时的Qt/Embedded库已经基本上失去了使用价值。低的程序效率、大的资源消耗也对运行Qt/Embedded的硬件提出了更高的要求。 
@@ -87,7 +87,7 @@ LibGGI试图建立一个一般性的图形接口，而这个抽象接口连同�
 注：目前，Qt/Embedded已经增加了对DirectFB驱动的支持，因此具有了图形加速能力，其性能也大大地得到提高。
 
 3.4 MiniGUI
-　　MiniGUI（http://www.minigui.org/）是由许多自由软件开发人员支持的一个自由软件项目（遵循 LGPL 条款发布），其目标是为基于Linux 的实时嵌入式系统提供一个轻量级的图形用户界面支持系统。该项目自 1998 年底开始到现在，已历经3年多的开发过程。到目前为止，已经非常成熟和稳定。目前，已经正式发布了稳定版本 1.0.9，并且开始了新版本系列的开发，即 MiniGUI Version 1.1.x，该系列的正式版也即将发布。 
+　　[MiniGUI](http://www.minigui.org/) 是由许多自由软件开发人员支持的一个自由软件项目（遵循 LGPL 条款发布），其目标是为基于Linux 的实时嵌入式系统提供一个轻量级的图形用户界面支持系统。该项目自 1998 年底开始到现在，已历经3年多的开发过程。到目前为止，已经非常成熟和稳定。目前，已经正式发布了稳定版本 1.0.9，并且开始了新版本系列的开发，即 MiniGUI Version 1.1.x，该系列的正式版也即将发布。 
 
 　　在MiniGUI几年的发展过程中，有许多值得一提的技术创新点，正是由于这些技术上的创新，才使得 MiniGUI 更加适合实时嵌入式系统；而且 MiniGUI 的灵活性非常好，可以应用在包括手持设备、机顶盒、游戏终端等等在内的各种高端或者低端的嵌入式系统当中。这些技术创新包括： 
 1）图形抽象层。图形抽象层对顶层 API 基本没有影响，但大大方便了 MiniGUI 应用程序的移植、调试等工作。目前包含三个图形引擎，SVGALib、LibGGI 以及直接基于 Linux FrameBuffer 的 Native Engine，利用 LibGGI 时，可在 X Window 上运行 MiniGUI 应用程序，并可非常方便地进行调试。与图形抽象层相关的还有输入事件的抽象层。MiniGUI 现在已经被证明能够在基于 ARM、MIPS、StrongARM 以及 PowerPC 等的嵌入式系统上流畅运行。 
