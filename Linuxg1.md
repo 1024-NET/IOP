@@ -56,5 +56,5 @@ X的软件架构
 - [Link3](https://wiki.archlinux.org/index.php/Display_Manager)
 - [Link4](https://wiki.debian.org/DisplayManager)
 - [Link5](http://en.wikipedia.org/wiki/GNOME)
-- [Link6]http://stackoverflow.com/questions/17251293/what-is-the-relationship-between-x11-and-gnome 
+- [Link6](http://stackoverflow.com/questions/17251293/what-is-the-relationship-between-x11-and-gnome) 
 
