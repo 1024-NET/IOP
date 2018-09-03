@@ -8,8 +8,8 @@
 ------------
 
 <div align="center">
-    <img src="https://i.imgur.com/xG0AlXW.jpg" width="200px">
+    <img src="https://i.imgur.com/xG0AlXW.jpg" width="400px">
     <br>
 </div>
 
-![](https://i.imgur.com/xG0AlXW.jpg)
+
