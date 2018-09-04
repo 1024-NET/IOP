@@ -1,6 +1,8 @@
 # IOP
 ### 💻Image Oriented Programming  　　　　　　📺Basic  　　　　　　　　　　📱WallpaperOS
 
+WallpaperOS：与硬件隔离的壁纸桌面系统，能够自定义图片局部的个性化功能。
+
 ------------
 
 <div align="center">
