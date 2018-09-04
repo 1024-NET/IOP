@@ -29,8 +29,11 @@ X的软件架构
 ### 1. X Display Manager(XDM)
 
 　　display manager，又称login manager，是linux在boot进程完成之后启动的一个用于用户身份认证的图形界面，相当于文本模式下启动时让我们输入用户名和密码的shell。比较常见的有GNOME的gdm，KDE的kdm等。
-![](https://i.imgur.com/F3slo4W.jpg)
-　　
+  
+ <div align="center">
+    <img src="https://i.imgur.com/F3slo4W.jpg">
+    <br>
+</div>  
 
 　　display manager可以在本地也可以在远程主机上启动。如果在本地启动，display manager接下来会把x server也启动起来，这样就可以在开机时显示如上图所示的图形界面了。
 
