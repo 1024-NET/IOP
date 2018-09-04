@@ -1,3 +1,7 @@
+ <div align="center">
+    <img src="https://www.easyicon.net/api/resizeApi.php?id=546986&size=72" width="72px">
+    <br>
+</div>
 
 在进行Linux下的图形系统编程时，我们常常会遇到以下这些概念：
 
