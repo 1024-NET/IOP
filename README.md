@@ -1,5 +1,5 @@
 # IOP
-### 💻Image oriented programming  　　　　　　📺Basic  　　　　　　　　　　📱WallpaperOS
+### 💻Image Oriented Programming  　　　　　　📺Basic  　　　　　　　　　　📱WallpaperOS
 
 ------------
 
