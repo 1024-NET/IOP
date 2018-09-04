@@ -8,11 +8,12 @@ X的软件架构
 　　如上图所示，X使用服务器-客户端模型：每个需要显示图形界面的主机都要运行一个x server，它负责主机中各个与图形界面有关硬件设备的管理，如在显示器中显示输出，从鼠标、键盘接受输入等。同时与不同的客户端程序（x client）通信，x client指那些需要图形界面的应用程序，如浏览器、终端、视频播放器等。这里需要解释一下，这里的server，client术语是从应用的角度而不是以用户的角度来说的：X server利用自己对硬件的掌控为应用提供显示界面以及处理输入输出等服务，所以说它是服务器端，而各种应用需要使用x server提供的这些服务，他们就是客户端了。
 
 　　x server和x client之间所使用的通信协议对网络来说是透明的，所以client和server可以运行在相同机器上，也可以运行在不同机器上，甚至机器本身的硬件架构和操作系统也可以不一样（如windows上的[xmanager](http://www.xshellcn.com/)就是一个x server，它可以远程连接linux上的主机为linux上的x client提供服务，有兴趣的童鞋可以试下）。
+  
+    ![Xmanager产品](https://i.imgur.com/DgzabP3.png)
 
  　　说完了x的软件架构，下面我们就来说说x中其他几个概念。
    
-   ![Xmanager产品](https://i.imgur.com/DgzabP3.png)
-
+   
 -------------------
 
 ### 1. X Display Manager(XDM)
