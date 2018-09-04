@@ -38,7 +38,11 @@ X的软件架构
 　　display manager可以在本地也可以在远程主机上启动。如果在本地启动，display manager接下来会把x server也启动起来，这样就可以在开机时显示如上图所示的图形界面了。
 
 　　如果display manager已经在远程启动了，我们在本地需要连接到远程的display manager上去，这时x server就用使用XDMCP(X Display Manager Control Protocol)协议连接到远程的display manager，请求开启一个会话，这样在本地也就出现了如上图所示画面，如果身份认证通过，display manager就退居二线，剩下的就是本地的x server与远程的x client之间互相交流了：我们通过x server（键盘、鼠标等输入设备）把我们的要求发给x client（x client与display manager 运行在同一台机器上），x client运行得到结果并将结果返回给x server，x server再通过自己管理的输出设备如显示屏等把结果显示出来，如此种种可以参看下图。
-![](https://i.imgur.com/PZuSO7T.png)
+
+<div align="center">
+    <img src="https://i.imgur.com/PZuSO7T.png">
+    <br>
+</div> 
 
 　　我们可以发现，在第二种情况下，x server就相当于图形化界面的telnet客户端，而display manager 相当于图形化界面的telnet服务端，不是么？：-）
 
