@@ -9,7 +9,7 @@ X的软件架构
 
 　　x server和x client之间所使用的通信协议对网络来说是透明的，所以client和server可以运行在相同机器上，也可以运行在不同机器上，甚至机器本身的硬件架构和操作系统也可以不一样（如windows上的[xmanager](http://www.xshellcn.com/)就是一个x server，它可以远程连接linux上的主机为linux上的x client提供服务，有兴趣的童鞋可以试下）。
   
-    ![Xmanager产品](https://i.imgur.com/DgzabP3.png)
+![Xmanager产品](https://i.imgur.com/DgzabP3.png)
 
  　　说完了x的软件架构，下面我们就来说说x中其他几个概念。
    
