@@ -1,4 +1,7 @@
-　　![](https://www.easyicon.net/api/resizeApi.php?id=540438&size=128)
+ <div align="center">
+    <img src="https://www.easyicon.net/api/resizeApi.php?id=546986&size=72" width="72px">
+    <br>
+</div>
 　　我们知道unix/linux刚开始的时候是没有图形界面的，随着时代的发展，排版、制图、多媒体应用越来越普遍了，这些需求都需要用到图形界面（Graphical User Interface）。为此，MIT在1984年开发出了X window system，X在字母表中是W（indows）的下一个字母，寓意“下一代GUI”的意思。目前为止，unix/linux上几乎所有的发行版都采用X window system来作为自己的图形界面，它已经成为事实上的unix/linux图形界面标准。
 
 　　X window system，又名X,X11（现在主要的X window system大都基于其第11个版本），是一个能够跨网络和操作系统平台的图形界面。开发者在开发x时就希望，这个窗口界面不要与硬件有强烈的相关性，这是因为如果与硬件的相关性高，那就等于开发一个操作系统了，如此一来其应用性就要受到限制。故此，x是一套软件体系，而不是操作系统中的组成部分，就像浏览器不是操作系统的组成部分一样（当然微软在与网景干仗时可不管这些）。
@@ -63,3 +66,4 @@ X的软件架构
 - [what-is-the-relationship-between-x11-and-gnome](http://stackoverflow.com/questions/17251293/what-is-the-relationship-between-x11-and-gnome) 
 - [linux桌面环境gnome,kde,xfce,lxde 使用比较](https://www.jb51.net/LINUXjishu/512251.html)
 
+![](https://www.easyicon.net/api/resizeApi.php?id=540438&size=128)
