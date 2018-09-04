@@ -3,6 +3,8 @@
     <br>
 </div>
 
+----------
+
 在进行Linux下的图形系统编程时，我们常常会遇到以下这些概念：
 
 Framebuffer, X11, SDL，DFB, miniGUI, OpenGL，QT, GTK，KDE, GNOME等等。
