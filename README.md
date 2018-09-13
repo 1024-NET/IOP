@@ -5,7 +5,7 @@ WallpaperOS:与硬件隔离的壁纸桌面系统，能够自定义图片局部�
 ### 💻Image Oriented Programming  　　　　　　📺Basic  　　　　　　　　　　📱WallpaperOS
 
 
-------------
+![](https://raw.githubusercontent.com/ckjbug/xiaokui/master/split.png)
 
 <div align="center">
     <img src="https://i.imgur.com/xG0AlXW.jpg" width="400px">
@@ -13,7 +13,7 @@ WallpaperOS:与硬件隔离的壁纸桌面系统，能够自定义图片局部�
     <a href="https://github.com/dncProject/IOP/edit/master/README.md"> <img src="https://img.shields.io/badge/>-group-4ab8a1.svg"></a> <a href="https://legacy.gitbook.com/book/cyc2018/interview-notebook/details"> <img src="https://img.shields.io/badge/_-gitbook-4ab8a1.svg"></a> 
 </div>
 
--------------
+![](https://raw.githubusercontent.com/ckjbug/xiaokui/master/split.png)
 
 ## Linux G
 
